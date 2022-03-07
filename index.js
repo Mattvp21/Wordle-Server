@@ -16,7 +16,7 @@ var options = {
     params: {count: '5', wordLength: '5'},
     headers: {
       'x-rapidapi-host': 'random-words5.p.rapidapi.com',
-      'x-rapidapi-key': 'd4a6c24a57msh59c8f9dfdd5b6c8p120605jsn334da800e204'
+      'x-rapidapi-key': process.env.API_KEY
     }
   }
 
@@ -38,7 +38,7 @@ app.get("/check", (req, res) => {
         params: {entry: word},
         headers: {
           'x-rapidapi-host': 'twinword-word-graph-dictionary.p.rapidapi.com',
-          'x-rapidapi-key': 'd4a6c24a57msh59c8f9dfdd5b6c8p120605jsn334da800e204'
+          'x-rapidapi-key': process.env.API_KEY
         }
       };
       
