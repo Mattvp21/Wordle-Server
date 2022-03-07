@@ -52,6 +52,6 @@ app.get("/check", (req, res) => {
 
 
 
-app.listen(proccess.env.PORT || PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('Server succesfully connected to port 8000')
 })
